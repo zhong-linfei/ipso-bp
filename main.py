@@ -26,6 +26,7 @@ X_train_scaled = scaler_X.fit_transform(X_train)
 X_test_scaled = scaler_X.transform(X_test)
 #修改12345
 model = Sequential()
+666
 model.add(Dense(54, input_dim=X_train_scaled.shape[1], activation='relu'))  # 输入层和第一个隐藏层
 model.add(Dense(1, activation='relu'))  # 第二个隐藏层
 model.add(Dense(1, activation='linear'))  # 输出层
