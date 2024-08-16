@@ -24,8 +24,9 @@ y_test = pd.read_csv(file_ytest_path)['SalePrice']
 scaler_X = StandardScaler()
 X_train_scaled = scaler_X.fit_transform(X_train)
 X_test_scaled = scaler_X.transform(X_test)
-#修改1
+#修改12345
 model = Sequential()
-model.add(Dense(64, input_dim=X_train_scaled.shape[1], activation='relu'))  # 输入层和第一个隐藏层
-model.add(Dense(16, activation='relu'))  # 第二个隐藏层
+666
+model.add(Dense(54, input_dim=X_train_scaled.shape[1], activation='relu'))  # 输入层和第一个隐藏层
+model.add(Dense(1, activation='relu'))  # 第二个隐藏层
 model.add(Dense(1, activation='linear'))  # 输出层
